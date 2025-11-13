@@ -18,6 +18,7 @@
 		235023082EC55BF200843A67 /* PaloraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235022EF2EC55BF200843A67 /* PaloraApp.swift */; };
 		235023092EC55BF200843A67 /* MarkdownExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235022FC2EC55BF200843A67 /* MarkdownExporter.swift */; };
 		2350230A2EC55BF200843A67 /* ARCHITECTURE.md in Resources */ = {isa = PBXBuildFile; fileRef = 235022F62EC55BF200843A67 /* ARCHITECTURE.md */; };
+		2350230B2EC55BF200843A67 /* SimpleAudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350230C2EC55BF200843A67 /* SimpleAudioRecorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		235022FA2EC55BF200843A67 /* RecordingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingController.swift; sourceTree = "<group>"; };
 		235022FC2EC55BF200843A67 /* MarkdownExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownExporter.swift; sourceTree = "<group>"; };
 		235022FE2EC55BF200843A67 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		2350230C2EC55BF200843A67 /* SimpleAudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAudioRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				235022F22EC55BF200843A67 /* AudioCaptureService.swift */,
+				2350230C2EC55BF200843A67 /* SimpleAudioRecorder.swift */,
 			);
 			name = Audio;
 			path = ../Audio;
@@ -247,6 +250,7 @@
 				235023072EC55BF200843A67 /* MeetingDetector.swift in Sources */,
 				235023082EC55BF200843A67 /* PaloraApp.swift in Sources */,
 				235023092EC55BF200843A67 /* MarkdownExporter.swift in Sources */,
+				2350230B2EC55BF200843A67 /* SimpleAudioRecorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
