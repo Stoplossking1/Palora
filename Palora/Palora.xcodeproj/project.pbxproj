@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		235023002EC55BF200843A67 /* SummaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235022EC2EC55BF200843A67 /* SummaryService.swift */; };
+		235023012EC55BF200843A67 /* TranscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235022ED2EC55BF200843A67 /* TranscriptionService.swift */; };
+		235023022EC55BF200843A67 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235022FE2EC55BF200843A67 /* StatusBarController.swift */; };
+		235023032EC55BF200843A67 /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235022F02EC55BF200843A67 /* Permissions.swift */; };
+		235023042EC55BF200843A67 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235022F42EC55BF200843A67 /* AppConfig.swift */; };
+		235023052EC55BF200843A67 /* AudioCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235022F22EC55BF200843A67 /* AudioCaptureService.swift */; };
+		235023062EC55BF200843A67 /* RecordingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235022FA2EC55BF200843A67 /* RecordingController.swift */; };
+		235023072EC55BF200843A67 /* MeetingDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235022F82EC55BF200843A67 /* MeetingDetector.swift */; };
+		235023082EC55BF200843A67 /* PaloraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235022EF2EC55BF200843A67 /* PaloraApp.swift */; };
+		235023092EC55BF200843A67 /* MarkdownExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235022FC2EC55BF200843A67 /* MarkdownExporter.swift */; };
+		2350230A2EC55BF200843A67 /* ARCHITECTURE.md in Resources */ = {isa = PBXBuildFile; fileRef = 235022F62EC55BF200843A67 /* ARCHITECTURE.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		235022DE2EC55B2E00843A67 /* Palora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		235022EC2EC55BF200843A67 /* SummaryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryService.swift; sourceTree = "<group>"; };
+		235022ED2EC55BF200843A67 /* TranscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionService.swift; sourceTree = "<group>"; };
+		235022EF2EC55BF200843A67 /* PaloraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaloraApp.swift; sourceTree = "<group>"; };
+		235022F02EC55BF200843A67 /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
+		235022F22EC55BF200843A67 /* AudioCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCaptureService.swift; sourceTree = "<group>"; };
+		235022F42EC55BF200843A67 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		235022F62EC55BF200843A67 /* ARCHITECTURE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ARCHITECTURE.md; sourceTree = "<group>"; };
+		235022F82EC55BF200843A67 /* MeetingDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingDetector.swift; sourceTree = "<group>"; };
+		235022FA2EC55BF200843A67 /* RecordingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingController.swift; sourceTree = "<group>"; };
+		235022FC2EC55BF200843A67 /* MarkdownExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownExporter.swift; sourceTree = "<group>"; };
+		235022FE2EC55BF200843A67 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		235022E02EC55B2E00843A67 /* Palora */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Palora;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		235022DB2EC55B2E00843A67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		235022D52EC55B2E00843A67 = {
+			isa = PBXGroup;
+			children = (
+				235022E02EC55B2E00843A67 /* Palora */,
+				235022DF2EC55B2E00843A67 /* Products */,
+				235022EE2EC55BF200843A67 /* AI */,
+				235022F12EC55BF200843A67 /* App */,
+				235022F32EC55BF200843A67 /* Audio */,
+				235022F52EC55BF200843A67 /* Config */,
+				235022F72EC55BF200843A67 /* Docs */,
+				235022F92EC55BF200843A67 /* Meetings */,
+				235022FB2EC55BF200843A67 /* Orchestration */,
+				235022FD2EC55BF200843A67 /* Storage */,
+				235022FF2EC55BF200843A67 /* UI */,
+			);
+			sourceTree = "<group>";
+		};
+		235022DF2EC55B2E00843A67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				235022DE2EC55B2E00843A67 /* Palora.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		235022EE2EC55BF200843A67 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				235022EC2EC55BF200843A67 /* SummaryService.swift */,
+				235022ED2EC55BF200843A67 /* TranscriptionService.swift */,
+			);
+			name = AI;
+			path = ../AI;
+			sourceTree = SOURCE_ROOT;
+		};
+		235022F12EC55BF200843A67 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				235022EF2EC55BF200843A67 /* PaloraApp.swift */,
+				235022F02EC55BF200843A67 /* Permissions.swift */,
+			);
+			name = App;
+			path = ../App;
+			sourceTree = SOURCE_ROOT;
+		};
+		235022F32EC55BF200843A67 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				235022F22EC55BF200843A67 /* AudioCaptureService.swift */,
+			);
+			name = Audio;
+			path = ../Audio;
+			sourceTree = SOURCE_ROOT;
+		};
+		235022F52EC55BF200843A67 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				235022F42EC55BF200843A67 /* AppConfig.swift */,
+			);
+			name = Config;
+			path = ../Config;
+			sourceTree = SOURCE_ROOT;
+		};
+		235022F72EC55BF200843A67 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				235022F62EC55BF200843A67 /* ARCHITECTURE.md */,
+			);
+			name = Docs;
+			path = ../Docs;
+			sourceTree = SOURCE_ROOT;
+		};
+		235022F92EC55BF200843A67 /* Meetings */ = {
+			isa = PBXGroup;
+			children = (
+				235022F82EC55BF200843A67 /* MeetingDetector.swift */,
+			);
+			name = Meetings;
+			path = ../Meetings;
+			sourceTree = SOURCE_ROOT;
+		};
+		235022FB2EC55BF200843A67 /* Orchestration */ = {
+			isa = PBXGroup;
+			children = (
+				235022FA2EC55BF200843A67 /* RecordingController.swift */,
+			);
+			name = Orchestration;
+			path = ../Orchestration;
+			sourceTree = SOURCE_ROOT;
+		};
+		235022FD2EC55BF200843A67 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				235022FC2EC55BF200843A67 /* MarkdownExporter.swift */,
+			);
+			name = Storage;
+			path = ../Storage;
+			sourceTree = SOURCE_ROOT;
+		};
+		235022FF2EC55BF200843A67 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				235022FE2EC55BF200843A67 /* StatusBarController.swift */,
+			);
+			name = UI;
+			path = ../UI;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		235022DD2EC55B2E00843A67 /* Palora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235022E92EC55B3000843A67 /* Build configuration list for PBXNativeTarget "Palora" */;
+			buildPhases = (
+				235022DA2EC55B2E00843A67 /* Sources */,
+				235022DB2EC55B2E00843A67 /* Frameworks */,
+				235022DC2EC55B2E00843A67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				235022E02EC55B2E00843A67 /* Palora */,
+			);
+			name = Palora;
+			packageProductDependencies = (
+			);
+			productName = Palora;
+			productReference = 235022DE2EC55B2E00843A67 /* Palora.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		235022D62EC55B2E00843A67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					235022DD2EC55B2E00843A67 = {
+						CreatedOnToolsVersion = 26.1;
+					};
+				};
+			};
+			buildConfigurationList = 235022D92EC55B2E00843A67 /* Build configuration list for PBXProject "Palora" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 235022D52EC55B2E00843A67;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 235022DF2EC55B2E00843A67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				235022DD2EC55B2E00843A67 /* Palora */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		235022DC2EC55B2E00843A67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2350230A2EC55BF200843A67 /* ARCHITECTURE.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		235022DA2EC55B2E00843A67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235023002EC55BF200843A67 /* SummaryService.swift in Sources */,
+				235023012EC55BF200843A67 /* TranscriptionService.swift in Sources */,
+				235023022EC55BF200843A67 /* StatusBarController.swift in Sources */,
+				235023032EC55BF200843A67 /* Permissions.swift in Sources */,
+				235023042EC55BF200843A67 /* AppConfig.swift in Sources */,
+				235023052EC55BF200843A67 /* AudioCaptureService.swift in Sources */,
+				235023062EC55BF200843A67 /* RecordingController.swift in Sources */,
+				235023072EC55BF200843A67 /* MeetingDetector.swift in Sources */,
+				235023082EC55BF200843A67 /* PaloraApp.swift in Sources */,
+				235023092EC55BF200843A67 /* MarkdownExporter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		235022E72EC55B3000843A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		235022E82EC55B3000843A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		235022EA2EC55B3000843A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Palora.Palora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		235022EB2EC55B3000843A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Palora.Palora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		235022D92EC55B2E00843A67 /* Build configuration list for PBXProject "Palora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235022E72EC55B3000843A67 /* Debug */,
+				235022E82EC55B3000843A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		235022E92EC55B3000843A67 /* Build configuration list for PBXNativeTarget "Palora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235022EA2EC55B3000843A67 /* Debug */,
+				235022EB2EC55B3000843A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 235022D62EC55B2E00843A67 /* Project object */;
+}

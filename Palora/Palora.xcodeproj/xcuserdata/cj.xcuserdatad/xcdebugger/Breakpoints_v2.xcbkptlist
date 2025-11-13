@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F0694842-136F-4C54-9434-2B2108AB7284"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6220EB5A-B428-4A92-90EB-B3EA3A5FF0B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Audio/AudioCaptureService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "startRecordingSystemAudio()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD9F7257-8552-4480-B264-5FF7EEE1706A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Audio/AudioCaptureService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "startRecordingSystemAudio()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DBC60629-ECDB-4D3A-BCDD-80CCC795FBF5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Audio/AudioCaptureService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "startRecordingSystemAudio()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DBC60629-ECDB-4D3A-BCDD-80CCC795FBF5 - 3d6ac6f2bf6cac1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) suspend resume partial function for Palora.AudioCaptureService.startRecordingSystemAudio() async throws -&gt; Foundation.URL"
+                  moduleName = "Palora.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cj/development/Palora/Audio/AudioCaptureService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46">
+               </Location>
+               <Location
+                  uuid = "DBC60629-ECDB-4D3A-BCDD-80CCC795FBF5 - 35a0513684302a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) await resume partial function for Palora.AudioCaptureService.startRecordingSystemAudio() async throws -&gt; Foundation.URL"
+                  moduleName = "Palora.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cj/development/Palora/Audio/AudioCaptureService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46">
+               </Location>
+               <Location
+                  uuid = "DBC60629-ECDB-4D3A-BCDD-80CCC795FBF5 - b744780885af06c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Palora.AudioCaptureService.startRecordingSystemAudio() async throws -&gt; Foundation.URL"
+                  moduleName = "Palora.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cj/development/Palora/Audio/AudioCaptureService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46">
+               </Location>
+               <Location
+                  uuid = "DBC60629-ECDB-4D3A-BCDD-80CCC795FBF5 - d87811705a7a9ec7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) suspend resume partial function for Palora.AudioCaptureService.startRecordingSystemAudio() async throws -&gt; Foundation.URL"
+                  moduleName = "Palora.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cj/development/Palora/Audio/AudioCaptureService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46">
+               </Location>
+               <Location
+                  uuid = "DBC60629-ECDB-4D3A-BCDD-80CCC795FBF5 - 338e2c9b5723532d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.CheckedContinuation&lt;__C.SCShareableContent, Swift.Error&gt;) -&gt; () in Palora.AudioCaptureService.startRecordingSystemAudio() async throws -&gt; Foundation.URL"
+                  moduleName = "Palora.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cj/development/Palora/Audio/AudioCaptureService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2F18380E-2C6A-4CC3-9618-390F7D4583E8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Audio/AudioCaptureService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "startRecordingSystemAudio()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2F18380E-2C6A-4CC3-9618-390F7D4583E8 - b744780885af04dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Palora.AudioCaptureService.startRecordingSystemAudio() async throws -&gt; Foundation.URL"
+                  moduleName = "Palora.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cj/development/Palora/Audio/AudioCaptureService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61">
+               </Location>
+               <Location
+                  uuid = "2F18380E-2C6A-4CC3-9618-390F7D4583E8 - 24ca44d4ff8040da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for Palora.AudioCaptureService.startRecordingSystemAudio() async throws -&gt; Foundation.URL"
+                  moduleName = "Palora.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cj/development/Palora/Audio/AudioCaptureService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61">
+               </Location>
+               <Location
+                  uuid = "2F18380E-2C6A-4CC3-9618-390F7D4583E8 - 6210723874e7ed7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for Palora.AudioCaptureService.startRecordingSystemAudio() async throws -&gt; Foundation.URL"
+                  moduleName = "Palora.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cj/development/Palora/Audio/AudioCaptureService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
