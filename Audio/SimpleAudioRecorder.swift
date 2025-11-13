@@ -151,7 +151,7 @@ final class SimpleAudioRecorder: NSObject {
     // Try multiple strategies to create a valid filter
     
     // Strategy 1: Use desktop windows (most reliable for audio)
-    if let desktopWindow = content.desktopIndependentWindows.first {
+    if let desktopWindow = content.windows.first {
       NSLog("[SimpleAudioRecorder] Using desktop window: \(desktopWindow.windowID)")
       return SCContentFilter(desktopIndependentWindow: desktopWindow)
     }
@@ -168,10 +168,22 @@ final class SimpleAudioRecorder: NSObject {
       return SCContentFilter(display: firstDisplay, excludingApplications: [], exceptingWindows: [])
     }
     
-    // Strategy 4: Use first application
-    if let firstApp = content.applications.first {
-      NSLog("[SimpleAudioRecorder] Using first application: \(firstApp.bundleIdentifier ?? "unknown")")
-      return SCContentFilter(desktopIndependentWindow: nil, excludingApplications: [], exceptingWindows: [])
+    // Strategy 4: Use Google Chrome (where music is playing)
+    // Log all available apps for debugging
+    NSLog("[SimpleAudioRecorder] Available applications: \(content.applications.map { $0.bundleIdentifier ?? "unknown" })")
+    
+    if let chromeApp = content.applications.first(where: { $0.bundleIdentifier == "com.google.Chrome" }) {
+      NSLog("[SimpleAudioRecorder] ✅ Found Google Chrome: \(chromeApp.bundleIdentifier ?? "unknown")")
+      
+      guard let mainDisplay = content.displays.first(where: { $0.displayID == CGMainDisplayID() }) ?? content.displays.first else {
+        throw RecordingError.noCapturableContent
+      }
+      
+      let otherApps = content.applications.filter { $0.bundleIdentifier != "com.google.Chrome" }
+      return SCContentFilter(display: mainDisplay, excludingApplications: otherApps, exceptingWindows: [])
+    } else {
+      NSLog("[SimpleAudioRecorder] ⚠️ Google Chrome not found in running applications")
+      throw RecordingError.noCapturableContent
     }
     
     throw RecordingError.noCapturableContent
