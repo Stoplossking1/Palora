@@ -50,26 +50,44 @@ final class PaloraAppDelegate: NSObject, NSApplicationDelegate {
           NSWorkspace.shared.open(url)
         }
       },
-      onTestCapture: { [weak audioService] in
+      onTestCapture: {
         Task {
+          let recorder = SimpleAudioRecorder()
           do {
-            NSLog("[Test] Starting quick audio capture test...")
-            let startURL = try await audioService?.startRecordingSystemAudio()
-            if let startURL = startURL {
-              NSLog("[Test] Recording to \(startURL.lastPathComponent)")
-            }
-            try await Task.sleep(nanoseconds: 3_000_000_000) // ~3 seconds
-              print("After 3 sec")
-              
-              
-            if let url = try await audioService?.stopRecordingSystemAudio() {
-                print("it passes here")
-              let size = (try? FileManager.default.attributesOfItem(atPath: url.path)[.size] as? Int) ?? 0
-              NSLog("[Test] Audio saved to: \(url.path) (\(size) bytes)")
-              NSWorkspace.shared.activateFileViewerSelecting([url])
+            NSLog("[Test] 🧪 Starting SimpleAudioRecorder test (10 seconds)...")
+            let startURL = try await recorder.startRecording()
+            NSLog("[Test] ✅ Recording started: \(startURL.lastPathComponent)")
+            
+            // Record for 10 seconds
+            try await Task.sleep(nanoseconds: 10_000_000_000)
+            NSLog("[Test] ⏱️ 10 seconds elapsed, stopping...")
+            
+            let url = try await recorder.stopRecording()
+            let size = (try? FileManager.default.attributesOfItem(atPath: url.path)[.size] as? Int64) ?? 0
+            NSLog("[Test] ✅ SUCCESS! Audio saved to: \(url.path) (\(size) bytes)")
+            
+            // Show in Finder
+            NSWorkspace.shared.activateFileViewerSelecting([url])
+            
+            // Show success alert
+            DispatchQueue.main.async {
+              let alert = NSAlert()
+              alert.messageText = "Test Recording Complete"
+              alert.informativeText = "Audio saved successfully!\n\nFile: \(url.lastPathComponent)\nSize: \(size) bytes"
+              alert.alertStyle = .informational
+              alert.addButton(withTitle: "OK")
+              alert.runModal()
             }
           } catch {
-            NSLog("[Test] ERROR: \(error)")
+            NSLog("[Test] ❌ ERROR: \(error)")
+            DispatchQueue.main.async {
+              let alert = NSAlert()
+              alert.messageText = "Test Recording Failed"
+              alert.informativeText = "Error: \(error.localizedDescription)"
+              alert.alertStyle = .warning
+              alert.addButton(withTitle: "OK")
+              alert.runModal()
+            }
           }
         }
       },
